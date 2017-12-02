@@ -44,12 +44,12 @@ window.onload=function ()
 		oNewDiv.innerHTML='<div class="img"><span class="over"><span class="shadow"></span></span></div>';
 		oNewDiv=oNewDiv.getElementsByClassName('img')[0];
 		
-		oNewDiv.style.background='url(img/'+i+'.jpg)';
+		oNewDiv.style.background='url(static/img/'+i+'.jpg)';
 		
-		oNewDiv.getElementsByClassName('shadow')[0].style.background='-webkit-linear-gradient(rgba(0,0,0,1) 40%, rgba(255,255,255,0)), url(img/'+i+'.jpg)';
-		oNewDiv.getElementsByClassName('shadow')[0].style.background='-moz-linear-gradient(rgba(0,0,0,1) 40%, rgba(255,255,255,0)), url(img/'+i+'.jpg)';
-		oNewDiv.getElementsByClassName('shadow')[0].style.background='-ms-linear-gradient(rgba(0,0,0,1) 40%, rgba(255,255,255,0)), url(img/'+i+'.jpg)';
-		oNewDiv.getElementsByClassName('shadow')[0].style.background='-o-linear-gradient(rgba(0,0,0,1) 40%, rgba(255,255,255,0)), url(img/'+i+'.jpg)';
+		oNewDiv.getElementsByClassName('shadow')[0].style.background='-webkit-linear-gradient(rgba(0,0,0,1) 40%, rgba(255,255,255,0)), url(static/img/'+i+'.jpg)';
+		oNewDiv.getElementsByClassName('shadow')[0].style.background='-moz-linear-gradient(rgba(0,0,0,1) 40%, rgba(255,255,255,0)), url(static/img/'+i+'.jpg)';
+		oNewDiv.getElementsByClassName('shadow')[0].style.background='-ms-linear-gradient(rgba(0,0,0,1) 40%, rgba(255,255,255,0)), url(static/img/'+i+'.jpg)';
+		oNewDiv.getElementsByClassName('shadow')[0].style.background='-o-linear-gradient(rgba(0,0,0,1) 40%, rgba(255,255,255,0)), url(static/img/'+i+'.jpg)';
 		oNewDiv.getElementsByClassName('shadow')[0].style.backgroundSize='100% 100%';
 		oNewDiv.style.backgroundSize='100% 100%';
 		
