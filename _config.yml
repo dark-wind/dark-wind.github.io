@@ -46,4 +46,4 @@ production_url : https://dark-wind.github.io/
 
 JB :
   BASE_PATH : false
-  atom_path : /atom.xml
+  atom_path : /feed.xml
