@@ -1,0 +1,8 @@
+<entry>
+    <title>{ { post.title } }</title>
+    <link href="{ { site.production_url } }{ { post.url } }"/>
+    <updated>{ { post.date | date_to_xmlschema } }</updated>
+    <id>{ { site.production_url } }{ { post.id } }</id>
+    <content type="html">{ { post.content | xml_escape } }</content>
+    <summary type="html">{ { post.description | xml_escape } }</summary>
+</entry>

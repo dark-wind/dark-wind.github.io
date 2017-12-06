@@ -4,6 +4,7 @@
 /* commom */
 body {
 	background-image: url('../img/canvas_bg.jpg');
+	background: #1f1f1f;
     font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
 }
 article p{
@@ -40,11 +41,17 @@ table td{
 }
 
 
-#index a:link {color: #005}		/* 未访问的链接 */
-#index a:visited {color: #669}	/* 已访问的链接 */
-#index a:hover {color: #336;text-decoration: none;}	/* 鼠标移动到链接上 */
+#index a:link {color: #555555}		/* 未访问的链接 */
+#index a:visited {color: #9DA04F}	/* 已访问的链接 */
+#index a:hover {color: #ffffff;text-decoration: none;}	/* 鼠标移动到链接上 */
 #index a:active {color: #99b}	/* 选定的链接 */
 
+#index.row {
+	background: #CCCACB;
+}
+#index .post-area {
+	background: #CCCACB;
+}
 /* navbar */
 nav{
 	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.5);
@@ -65,7 +72,8 @@ nav{
 }
 .post-area{
 	
-	background-color:#f8f8fd;
+	background-color:#3d3d3d;
+	background-image: url('../img/sep-half.png');
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
 	-o-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
@@ -113,7 +121,7 @@ nav{
 .categories-list-item{
 	display: block;
 	padding:8px 15px; 
-	border-bottom:1px solid #ddd; 
+	border-bottom:1px solid #ddd;
 
 	transition:0.4s ease;
 	-webkit-transition:0.4s ease;
