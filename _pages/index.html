@@ -1,0 +1,12 @@
+---
+layout: archive
+author_profile: false
+sidebar_custom: true
+---
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+    {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
+

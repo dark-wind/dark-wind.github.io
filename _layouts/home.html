@@ -1,0 +1,53 @@
+---
+---
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<head>
+    {% include head.html %}
+    {% include head/custom.html %}
+    <link rel="stylesheet" type="text/css" href="{{ '/resources/3D-ring/style/style.css'}}">
+    <script src="{{ '/resources/3D-ring/js/3d.js' }}"></script>
+
+</head>
+
+<body  class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+
+{% include browser-upgrade.html %}
+{% include masthead.html %}
+
+<div class="initial-content">
+    <div id="ring">
+        <div id="div1">
+            <strong id="div2"></strong>
+        </div>
+    </div>
+</div>
+
+{% if site.search == true %}
+<div class="search-content">
+    {% include search/search_form.html %}
+</div>
+{% endif %}
+
+<div class="page__footer">
+    <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+    </footer>
+</div>
+
+{% include scripts.html %}
+
+</body>
+<style>
+    body{
+        margin-bottom: 155px !important;
+    }
+</style>
+</html>
