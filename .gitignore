@@ -1,5 +1,4 @@
-# Created by .ignore support plugin (hsz.mobi)
-.sass-cache/
-_site/
+_site
+.sass-cache
+.jekyll-metadata
 .idea/
-
