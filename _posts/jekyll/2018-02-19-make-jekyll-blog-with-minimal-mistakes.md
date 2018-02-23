@@ -12,7 +12,7 @@ intro:
   - excerpt: '这次和以往做的博客不同，很少有代码的编写，借助jekyll，在github pages上搭建，采用Minimal Mistakes主题'
 
 feature_row:
-  - image_path: resources/article/img/darkwind.png
+  - image_path: resources/article/img/jekyll.jpg
     alt: "jekyll"
     title: "jekyll"
     excerpt: "
