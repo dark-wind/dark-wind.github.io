@@ -1,0 +1,7 @@
+_id: 4ca419d0-18aa-11e8-81e7-ad1d9008e648
+message: "评论示例\r\n\r\n+ 邮箱用于头像展示\r\n\r\n+ 头像依赖于[Gravatars](https://en.gravatar.com)\r\n\r\n+ 评论需要审核，不会立刻展示在文章下方\r\n\r\n+ 可以填上自己的主页，互相交流"
+name: darkwind
+email: c7e74fcb8f55d2af44416c0de3a37cad
+url: 'https://dark-wind.github.io'
+hidden: ''
+date: '2018-02-23T15:00:34.902Z'
