@@ -29,16 +29,15 @@ google-plus同第一条
 staticman居然成了最终选项 <@_@>
 
 ## staticman 官网
-https://staticman.net
+[官网](https://staticman.net)
+
+[手册](https://staticman.net/docs/)
+英语大拿请自行阅读，不想看的请掠过，后面有神翻译
+
 
 ## staticman 使用
 
-### 官网手册原文
-英语大拿请自行阅读，不想看的请掠过，后面有神翻译
-
-https://staticman.net/docs/
-
-### 将Staticman添加项目仓库
+### 一、将Staticman添加项目仓库
 
 打开github中需要添加的项目，进入设置页面
 
@@ -50,7 +49,9 @@ https://staticman.net/docs/
 
 成功会得到一个ok，真的只有ok，在左上角，眼神不好的童鞋别看漏了
 
-### mistake主题中的 staticman 配置
+### 二、mistake主题中的 staticman 配置
+
+
 
 文档乱七八糟，于是我用find大法，直接找到了staticman主题中的comment.html文件
 
@@ -81,52 +82,7 @@ https://staticman.net/docs/
           <!-- End static comments -->
 
           <!-- Start new comment form -->
-          <div class="page__comments-form">
-            <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h4>
-            <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
-            <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
-              <div class="form__spinner">
-                <i class="fas fa-spinner fa-spin fa-3x fa-fw"></i>
-                <span class="sr-only">{{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}</span>
-              </div>
-
-              <div class="form-group">
-                <label for="comment-form-message">{{ site.data.ui-text[site.locale].comment_form_comment_label | default: "Comment" }} <small class="required">*</small></label>
-                <textarea type="text" rows="3" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
-                <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
-              </div>
-              <div class="form-group">
-                <label for="comment-form-name">{{ site.data.ui-text[site.locale].comment_form_name_label | default: "Name" }} <small class="required">*</small></label>
-                <input type="text" id="comment-form-name" name="fields[name]" tabindex="2" />
-              </div>
-              <div class="form-group">
-                <label for="comment-form-email">{{ site.data.ui-text[site.locale].comment_form_email_label | default: "Email address" }} <small class="required">*</small></label>
-                <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
-              </div>
-              <div class="form-group">
-                <label for="comment-form-url">{{ site.data.ui-text[site.locale].comment_form_website_label | default: "Website (optional)" }}</label>
-                <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
-              </div>
-              <div class="form-group hidden" style="display: none;">
-                <input type="hidden" name="options[slug]" value="{{ page.slug }}">
-                <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
-                <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off"/>
-                <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
-                <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">
-              </div>
-              <!-- Start comment form alert messaging -->
-              <p class="hidden js-notice">
-                <strong class="js-notice-text"></strong>
-              </p>
-              <!-- End comment form alert messaging -->
-              <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
-              </div>
-              <div class="form-group">
-                <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
-              </div>
-            </form>
-          </div>
+            ...
           <!-- End new comment form -->
           {\% if site.reCaptcha.siteKey \%}<script async src="https://www.google.com/recaptcha/api.js"></script>{\% endif \%}
         {\% endif \%}
@@ -141,13 +97,14 @@ https://staticman.net/docs/
 ```
 
 可以跳过阅读end
+
 ===
 
 上面的文件给了海量信息：
 
-1 jekyll的运行环境为线上模式--production
+1. jekyll的运行环境为线上模式--production
 
-2 _config.yml的以下配置必须有：
+2. _config.yml的以下配置必须有：
 
     + site.comments.provider
     
@@ -156,3 +113,22 @@ https://staticman.net/docs/
     + site.repository
     
     + site.staticman.branch
+
+3. 示例文件：
+
+   [staticman.yml](https://github.com/mmistakes/minimal-mistakes/blob/master/staticman.yml)
+
+   [_config.yml](https://github.com/dark-wind/dark-wind.github.io/blob/master/_config.yml)
+
+   强调一下，这2个文件都必须要有，否则提交评论的时候会报错，报错的解决方法请到官方的issue中搜索，大部分给出了解决方案
+
+4.为文章开启评论功能
+
+eg:
+```html
+---
+title: "为博客添加staticman评论组件"
+categories: ruby
+tags: jekyll
+comments: true
+---
