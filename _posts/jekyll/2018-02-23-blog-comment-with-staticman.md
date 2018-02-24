@@ -2,7 +2,6 @@
 title: "为博客添加staticman评论组件"
 categories: ruby  
 tags: jekyll
-comments: true
 ---
 ## 工具选择
 

@@ -2,6 +2,7 @@
 title: "PHPMailer的使用"
 categories: php  
 tags: php mail
+toc: false
 ---
 
 成功的关键是引入的时候要引入全。。。
