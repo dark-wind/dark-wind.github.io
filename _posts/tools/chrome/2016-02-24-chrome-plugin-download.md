@@ -1,7 +1,7 @@
 ---
-title: "Phpstorm 修改git工具的用户名及邮箱"
+title: "chrome插件离线包下载"
 categories: tools
-tags: git
+tags: chrome
 ---
 
 
