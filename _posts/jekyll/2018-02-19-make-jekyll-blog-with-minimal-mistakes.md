@@ -3,6 +3,7 @@ title: "使用minimal-mistakes主题，在github Pages上搭建博客"
 categories: ruby
 tags: jekyll
 layout: splash
+comment:true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"

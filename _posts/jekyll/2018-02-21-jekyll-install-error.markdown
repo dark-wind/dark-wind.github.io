@@ -1,5 +1,4 @@
 ---
-layout: single
 title:  "jekyll 安装错误及解决"
 categories: ruby
 tag: jekyll
