@@ -2,7 +2,6 @@
 title: "Phpstorm 修改git工具的用户名及邮箱"
 categories: php
 tags: phpstorm git tools
-toc: false
 ---
 
 git修改了用户名

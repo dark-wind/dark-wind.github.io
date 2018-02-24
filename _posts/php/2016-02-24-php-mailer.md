@@ -2,7 +2,6 @@
 title: "PHPMailer的使用"
 categories: php  
 tags: php mail
-toc: false
 ---
 
 成功的关键是引入的时候要引入全。。。
@@ -51,4 +50,3 @@ toc: false
 </span><span style="color:#cc7832;background-color:#232525;font-weight:bold;">?&gt;</span></spanstyle="background-color:#232525;"></spanstyle="background-color:#232525;"></pre>
 
 &nbsp;&nbsp;
-</div>
