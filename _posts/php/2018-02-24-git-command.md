@@ -5,7 +5,7 @@ tags: git
 ---
 
 **Git 常用命令速查**
-
+```bash
 git branch 查看本地所有分支
 git status 查看当前状态&nbsp;
 git commit 提交&nbsp;
@@ -73,6 +73,8 @@ touch README
 git add README 添加文件
 git commit -m 'first commit'
 git remote add origin git@github.com:daixu/WebApp.git
+
+```
 
 增加一个远程服务器端
 
