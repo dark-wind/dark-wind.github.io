@@ -2,6 +2,8 @@
 title: "数字四舍五入精确到小数点后2位"
 categories: php
 tags: math round sprintf money number
+toc: true
+toc_label: 目录
 ---
 
 数字四舍五入精确到小数点后2位是非常常用的功能
@@ -12,7 +14,8 @@ tags: math round sprintf money number
 
 ## 常用的处理小数方法
 
-### number_format
+number_format
+---
 
 最推荐的方法，可以处理千位分隔，四舍五入，替换小数点显示的字符等。
 
@@ -51,7 +54,8 @@ tags: math round sprintf money number
 **注意** 返回的值是一个字符串
 {: .notice--warning}
 
-### round
+round
+---
 
 最常用的小数处理，方便好记，如果小数位已经小于指定的位数，函数将不做处理！！！
 
@@ -66,7 +70,8 @@ tags: math round sprintf money number
 
 * mode 以下之一： PHP_ROUND_HALF_UP、 PHP_ROUND_HALF_DOWN PHP_ROUND_HALF_EVEN 或 PHP_ROUND_HALF_ODD
 
-### sprintf
+sprintf
+---
 
 古老的c函数继承，远古的大牛用它搞了非常多奇技淫巧
 [官网手册](http://php.net/manual/zh/function.sprintf.php)
