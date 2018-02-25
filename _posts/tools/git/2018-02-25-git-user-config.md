@@ -1,7 +1,7 @@
 ---
-title: "PHPMailer的使用"
-categories: php  
-tags: php mail
+title: "git 多用户配置切换"
+categories: tools  
+tags: git 
 ---
 
 [官网原文](https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git)

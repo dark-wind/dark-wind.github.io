@@ -1,0 +1,17 @@
+---
+layout: archive
+author_profile: false
+permalink: /_categories/tools/index.html
+categories: tools
+sidebar_custom: true
+---
+
+{% for category in site.categories %}
+{% if category.first == page.categories %}
+<h2 id="{{ category.first | slugify }}" class="archive__subtitle">{{ category.first }}</span> {{ category.last | size }} </span></h2>
+{% for post in category.last %}
+{% include archive-single.html %}
+
+{% endfor %}
+{% endif %}
+{% endfor %}
