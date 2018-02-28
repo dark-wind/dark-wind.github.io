@@ -61,6 +61,12 @@ git remote origin set-url [url]
     git config -l
 ```
 
+## 修改用户名和地址
+```shell
+git config --global user.name "your name"
+git config --global user.email "your email"
+```
+
 
 
 
