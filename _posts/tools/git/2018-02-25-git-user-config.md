@@ -8,9 +8,11 @@ tags: git
 
 
 可以用 git config 配置 Git。 首先要做的事情就是设置你的名字和邮件地址：
-
+```angular2html
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
+```
+
 现在，你会了解到许多更有趣的选项，并用类似的方式来定制 Git。
 
 首先，快速回忆下：Git 使用一系列配置文件来保存你自定义的行为。 
