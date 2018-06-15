@@ -56,7 +56,6 @@ window.onload = function () {
             var oS = document.createElement('script');
 
             oS.type = 'text/javascript';
-            oS.src = 'http://www.zhinengshe.com/zpi/zns_demo.php?id=3540';
 
             document.body.appendChild(oS);
         })();
