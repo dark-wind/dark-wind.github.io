@@ -20,7 +20,7 @@ feature_row:
     url: "/linux/orange-pi-armbian-install/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: resources/article/img/plane.png
+  - image_path: resources/article/img/plane.jpg
     alt: "wifi"
     title: "wifi"
     excerpt: "wifi配置及内网访问"
