@@ -1,5 +1,5 @@
 ---
-title: "orange pi zone armbian system install"
+title: "orange pi zone armbian 系统安装"
 categories: linux  
 tags: orangePi armbian system
 toc: true
@@ -22,8 +22,9 @@ toc_label: 目录
 换成了Armbian系统
 
 ## 工具及系统下载
-1. 官网 [http://www.orangepi.cn]: http://www.orangepi.cn
-2. [https://www.armbian.com/download/?tx_maker=xunlong]: Armbian系统下载
+
+1. 官网:  http://www.orangepi.cn
+2. [Armbian系统下载](https://www.armbian.com/download/?tx_maker=xunlong)
 3. 烧录及格式化工具
 
 win:
@@ -35,8 +36,8 @@ win:
 
 lin:
 ```
- 1. sd卡 格式工具： fdisk [https://blog.csdn.net/mint_ying/article/details/51784969]: 命令参考
- 2. 烧录工具: [https://etcher.io/]: etcher
+ 1. sd卡 格式工具： fdisk [命令参考](https://blog.csdn.net/mint_ying/article/details/51784969)
+ 2. 烧录工具: [etcher](https://etcher.io/)
 ```
 
 ## SSH连接
