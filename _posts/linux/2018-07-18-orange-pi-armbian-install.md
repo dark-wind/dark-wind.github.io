@@ -28,7 +28,7 @@ toc_label: 目录
 3. 烧录及格式化工具
 
 win:
-```angular2html
+```
  官网下载的官方工具包：
  1. sd卡 格式工具：SDFormmater
  2. 系统烧录工具: Win32DiskImager 
@@ -42,25 +42,25 @@ lin:
 
 ## SSH连接
 插卡、上电就开机鸟, 官方系统在板子上亮红灯, Armbian亮绿灯
-```angular2html
+```
 arp -a
 ```
 查找ip
 找到ip直接ssh登录即可
-```angular2html
+```
 初始用户名：root
 初始密码：1234
 ssh root@192.168.0.188
 ```
 
 ## SD卡大小调整
-```angular2html
+```
 fs_resize    #调整SD卡大小
 shutdown -r now    #重启一下
 ```
 
 ## 系统配置
-```angular2html
+```
 armbian-config
 ```
 

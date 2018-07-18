@@ -8,7 +8,7 @@ tags: git
 
 
 可以用 git config 配置 Git。 首先要做的事情就是设置你的名字和邮件地址：
-```angular2html
+```
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
