@@ -1,7 +1,7 @@
 ---
 title: "orangePi wifi 配置"
 categories: linux
-tags: nginx
+tags: orangepi wifi font vnc
 toc: true
 toc_label: 目录
 ---
