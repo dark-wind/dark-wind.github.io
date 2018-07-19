@@ -331,7 +331,6 @@ sudo nano /etc/rc.local
 ```
 nohup ssh -NR 0.0.0.0:30522:127.0.0.1:22 username@serverIP > /dev/null 2>&1 &
 nohup ssh -NR 0.0.0.0:30580:127.0.0.1:8080 username@serverIP > /dev/null 2>&1 &
-/usr/local/bin/mjpg_streamer -i "input_uvc.so -r 1280x720 -d /dev/video0 -f 30 -q 80" -o "output_http.so -p 8080 -c username:password -w /usr/local/share/mjpg-streamer/www"
 ```
 22端口用于远程ssh登录
 8080端口是默认的MJPEG-Streamer页面访问端口
