@@ -42,6 +42,7 @@ Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
 1. [安装指南](https://github.com/cncjs/cncjs/wiki/Setup-Guide:-Raspberry-Pi-%7C-MJPEG-Streamer-Install-&-Setup-&-FFMpeg-Recording)
 2. 安装命令-可能会失效，以安装指南为准
+
 ```
 # Update & Install Tools
 sudo apt-get update
@@ -61,15 +62,18 @@ sudo make install
 /usr/local/bin/mjpg_streamer -i "input_uvc.so -r 1280x720 -d /dev/video0 -f 30 -q 80" -o "output_http.so -p 8080 -w /usr/local/share/mjpg-streamer/www"
 ```
 ## 访问
+
 ```
 http://localhost:8080/stream.html
 ```
 
 ## 开机自启
+
 ```
 nano /home/pi/mjpg-streamer.sh
 ```
 写入
+
 ```
 #!/bin/bash
 # chmod +x mjpg-streamer.sh
@@ -220,6 +224,7 @@ fi
 ```
 
 增加自启队列
+
 ```
 # Make Executable
 chmod +x /home/pi/mjpg-streamer.sh
@@ -234,20 +239,24 @@ crontab -e
 ## 内网穿透
 因为有一台阿里云做跳板，反向代理即可
 ### 创建本机秘钥
+
 ```
 cd ~/.ssh/
 ssh-keygen
 ```
 ### 公网服务器写入公钥
+
 ```
 ssh-copy-id user@server
 ```
 ### 开机自启及端口转发
+
 ```
 sudo nano /etc/rc.local
 ```
 
 在exit 0 前写入
+
 ```
 nohup ssh -NR 0.0.0.0:30522:127.0.0.1:22 username@serverIP > /dev/null 2>&1 &
 nohup ssh -NR 0.0.0.0:30580:127.0.0.1:8080 username@serverIP > /dev/null 2>&1 &
@@ -257,6 +266,7 @@ nohup ssh -NR 0.0.0.0:30580:127.0.0.1:8080 username@serverIP > /dev/null 2>&1 &
 8080端口是默认的MJPEG-Streamer页面访问端口
 
 ## 参考资料
+
 [Linux中显示系统中USB信息的lsusb命令](https://linux.cn/article-2448-1.html)
 
 [Setup Guide: Raspberry Pi | MJPEG Streamer Install & Setup & FFMpeg Recording](https://github.com/cncjs/cncjs/wiki/Setup-Guide:-Raspberry-Pi-%7C-MJPEG-Streamer-Install-&-Setup-&-FFMpeg-Recording)
