@@ -30,7 +30,7 @@ feature_row:
   - image_path: resources/article/img/tortoise.jpg
     title: "camera"
     excerpt: "摄像头设置"
-    url: "#test-link"
+    url: "/linux/orange-pi-zero-camera/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
