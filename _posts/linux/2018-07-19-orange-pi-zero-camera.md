@@ -320,10 +320,10 @@ ssh-keygen
 ```
 ssh-copy-id user@server
 ```
-### 开机自启及端口转发
+### 端口转发
 
 ```
-sudo nano /etc/rc.local
+sudo nano sshr.sh
 ```
 
 在exit 0 前写入
@@ -332,8 +332,26 @@ sudo nano /etc/rc.local
 nohup ssh -NR 0.0.0.0:30522:127.0.0.1:22 username@serverIP > /dev/null 2>&1 &
 nohup ssh -NR 0.0.0.0:30580:127.0.0.1:8080 username@serverIP > /dev/null 2>&1 &
 ```
+
 22端口用于远程ssh登录
+
 8080端口是默认的MJPEG-Streamer页面访问端口
+
+增加执行权限
+```
+sudo chmod +x sshr.sh
+```
+
+### 增加心跳
+
+```
+nano /etc/ssh/ssh_config
+```
+加入
+```
+TCPKeepAlive yes
+ServerAliveInterval 300
+```
 
 ## 参考资料
 
