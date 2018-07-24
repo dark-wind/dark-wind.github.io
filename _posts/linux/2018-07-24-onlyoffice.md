@@ -1,6 +1,6 @@
 ---
 title: "使用docker安装onlyOffice document & communityserver"
-categories:linux
+categories: linux
 tags: onlyOffice docker
 toc: true
 toc_label: 目录
