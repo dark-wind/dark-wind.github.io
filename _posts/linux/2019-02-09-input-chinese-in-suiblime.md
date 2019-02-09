@@ -7,7 +7,7 @@ toc_label: 目录
 ---
 只需要用下面命令就可以完美支持中文输入：
 
-```cmd
+```
 sudo apt-get update && sudo apt-get upgrade
 
 git clone https://github.com/lyfeyaj/sublime-text-imfix.git

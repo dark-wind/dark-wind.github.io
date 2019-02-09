@@ -6,7 +6,7 @@ toc: false
 toc_label: 目录
 ---
 报错
-```cmd
+```
 darkwind@darkwind-pc:~$ add-apt-repository
 Traceback (most recent call last):
   File "/usr/bin/add-apt-repository", line 9, in <module>
