@@ -1,7 +1,7 @@
 ---
 title:  "minimal mistake 本地运行ffi缺失问题修复"
-categories: ruby minimal
-tag: jekyll
+categories: ruby 
+tag: minimal ruby error
 toc: true
 toc_label: 目录
 ---
