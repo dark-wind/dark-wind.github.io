@@ -2,6 +2,22 @@
 layout: archive-for-book
 
 gallery:
+  - url: /books/math/考研真经_盘它_概率论.md.pdf
+    image_path: /assets/img/math/gll_cover.png
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /books/math/考研真经_盘它_线代.md.pdf
+    image_path: /assets/img/math/xxds_cover.jpg
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /books/math/考研真经_盘它_高数.md.pdf
+    image_path: /assets/img/math/gs_cover.jpg
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /books/math/考研真经总纲_数学篇.md.pdf
+    image_path: /assets/img/math/math_cover.jpg
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
   - url: /books/test.pdf
     image_path: /assets/img/book_covers/android_cover.png
     alt: "placeholder image 1"
@@ -53,5 +69,4 @@ gallery:
 ---
 <!-- this is a book page. -->
 
-{% include gallery layout="5" caption="This is a sample gallery with **Markdown support**." %}
-    height: 269px;
+{% include gallery layout="5" caption="" %}
