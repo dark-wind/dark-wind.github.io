@@ -7,9 +7,9 @@ main:
   - title: "blog"
     url: /_pages/index.html
   - title: "book"
-    url: /blog/
+    url: /_pages/book/
   - title: "project"
-    url: /blog/
+    url: /_pages/test/
   - title: "mine"
     url: /blog/
 

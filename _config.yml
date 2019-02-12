@@ -127,6 +127,7 @@ include:
   - .htaccess
   - _pages
   - _categories
+  - books
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
