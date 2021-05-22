@@ -3,6 +3,7 @@ _posts/tools/.DS_Store
 .sass-cache
 .jekyll-metadata
 .idea/
+.history/
 vendor
 .bundle
 .DS_Store
