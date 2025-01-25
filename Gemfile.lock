@@ -73,7 +73,7 @@ GEM
       jemoji (~> 0.8)
     minitest (5.17.0)
     multipart-post (2.0.0)
-    nokogiri (1.14.1)
+    nokogiri (1.14.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     octokit (4.8.0)
@@ -96,7 +96,9 @@ GEM
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
     thread_safe (0.3.6)
+    dependabot/bundler/activesupport-6.0.6.1
     tzinfo (1.2.11)
+
       thread_safe (~> 0.1)
     zeitwerk (2.6.6)
 
