@@ -46,42 +46,52 @@ sudo nano /etc/X11/xorg.conf
 ```
 在文件中添加以下内容：
 ```
-Section "Device"
+# 版权声明和注释部分保持不变
 
-  Identifier "Configured Video Device"
-
-  Driver   "dummy"
-
+Section "DRI"
+    Mode 0666
 EndSection
 
+Section "Module"
+    Disable     "dri"
+    SubSection  "extmod"
+        Option  "omit xfree86-dga"
+    EndSubSection
+EndSection
+
+# 定义Monitor部分
 Section "Monitor"
-
-  Identifier "Configured Monitor"
-
-  HorizSync  31.5-48.5
-
-  VertRefresh 50-70
-
+    Identifier  "Monitor0"
+    VendorName  "Monitor Vendor"
+    ModelName   "Monitor Model"
+    Option      "DPMS"
 EndSection
 
+# 定义Device部分
+Section "Device"
+    Identifier  "Tegra0"
+    Driver      "nvidia"
+    # 允许在没有显示设备连接的情况下启动X服务器
+    Option      "AllowEmptyInitialConfiguration" "true"
+EndSection
+
+# 定义Screen部分
 Section "Screen"
+    Identifier "Screen0"
+    Device     "Tegra0"
+    Monitor    "Monitor0"
+    DefaultDepth 24
+    SubSection "Display"
+        Depth     24
+        # 添加可用的分辨率模式
+        Modes    "1920x1080" "1280x1024" "1024x768"
+    EndSubSection
+EndSection
 
-  Identifier "Default Screen"
-
-  Monitor   "Configured Monitor"
-
-  Device   "Configured Video Device"
-
-  DefaultDepth 24
-
-  SubSection "Display"
-
-​    Depth 24
-
-​    Modes "1920x1080"
-
-  EndSubSection
-
+# 定义ServerLayout部分
+Section "ServerLayout"
+    Identifier "Layout0"
+    Screen     "Screen0"
 EndSection
 
 ```
